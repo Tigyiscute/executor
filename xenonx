@@ -1,0 +1,362 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local OutputFrame = Instance.new("ScrollingFrame")
+local UICorner_2 = Instance.new("UICorner")
+local ExecuteButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local ClearButton = Instance.new("TextButton")
+local execute = Instance.new("ImageLabel")
+local execute_2 = Instance.new("ImageLabel")
+
+--Properties:
+
+Frame.Parent = game.StarterGui.ExecutorGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.188091934, 0, 0.215339229, 0)
+Frame.Size = UDim2.new(0, 772, 0, 353)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.025906736, 0, 0.0801044032, 0)
+TextBox.Size = UDim2.new(0, 537, 0, 222)
+TextBox.Font = Enum.Font.SourceSansItalic
+TextBox.Text = "Type Your Script Here.."
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 25.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = TextBox
+
+OutputFrame.Name = "OutputFrame"
+OutputFrame.Parent = Frame
+OutputFrame.Active = true
+OutputFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OutputFrame.BackgroundTransparency = 1.000
+OutputFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OutputFrame.BorderSizePixel = 0
+OutputFrame.Position = UDim2.new(0.81735754, 0, 0.252136827, 0)
+OutputFrame.Size = UDim2.new(0, 96, 0, 132)
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = Frame
+
+ExecuteButton.Name = "ExecuteButton"
+ExecuteButton.Parent = Frame
+ExecuteButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton.BackgroundTransparency = 1.000
+ExecuteButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteButton.BorderSizePixel = 0
+ExecuteButton.Position = UDim2.new(0.669689119, 0, 0.44475922, 0)
+ExecuteButton.Size = UDim2.new(0, 40, 0, 47)
+ExecuteButton.Font = Enum.Font.SourceSans
+ExecuteButton.Text = ""
+ExecuteButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExecuteButton.TextSize = 14.000
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(-0.107512951, 0, -0.165899992, 0)
+ImageLabel.Size = UDim2.new(0, 266, 0, 155)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=18521548338"
+
+ImageLabel_2.Parent = Frame
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(-0.025906736, 0, 0.876811504, 0)
+ImageLabel_2.Size = UDim2.new(0, 103, 0, 52)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=18521636538"
+
+ImageButton.Parent = Frame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.605964959, 0, 0.646581888, 0)
+ImageButton.Size = UDim2.new(0, 373, 0, 192)
+ImageButton.Image = "http://www.roblox.com/asset/?id=18525325114"
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.709772825, 0, 0.709301651, 0)
+TextLabel.Size = UDim2.new(0, 213, 0, 41)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Join Our Discord Server!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 19.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.763094664, 0, 0.823129952, 0)
+TextLabel_2.Size = UDim2.new(0, 171, 0, 51)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "discord.gg/rgDWuzMx"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 17.000
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.722478509, 0, 0.154700086, 0)
+TextLabel_3.Size = UDim2.new(0, 213, 0, 41)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "Developed By"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 19.000
+
+ImageLabel_3.Parent = Frame
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.729274631, 0, 0.172804534, 0)
+ImageLabel_3.Size = UDim2.new(0, 209, 0, 108)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=18529608843"
+
+ImageLabel_4.Parent = Frame
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.729274631, 0, 0.314447582, 0)
+ImageLabel_4.Size = UDim2.new(0, 209, 0, 108)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=18529622859"
+
+ClearButton.Name = "ClearButton"
+ClearButton.Parent = Frame
+ClearButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClearButton.BackgroundTransparency = 1.000
+ClearButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ClearButton.BorderSizePixel = 0
+ClearButton.Position = UDim2.new(0.672279775, 0, 0.589235127, 0)
+ClearButton.Size = UDim2.new(0, 40, 0, 47)
+ClearButton.Font = Enum.Font.SourceSans
+ClearButton.Text = ""
+ClearButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ClearButton.TextSize = 14.000
+
+execute.Name = "execute"
+execute.Parent = Frame
+execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+execute.BackgroundTransparency = 1.000
+execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+execute.BorderSizePixel = 0
+execute.Position = UDim2.new(0.650259078, 0, 0.413597733, 0)
+execute.Size = UDim2.new(0, 76, 0, 70)
+execute.Image = "rbxassetid://18514152041"
+
+execute_2.Name = "execute"
+execute_2.Parent = Frame
+execute_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+execute_2.BackgroundTransparency = 1.000
+execute_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+execute_2.BorderSizePixel = 0
+execute_2.Position = UDim2.new(0.650259078, 0, 0.563739359, 0)
+execute_2.Size = UDim2.new(0, 76, 0, 70)
+execute_2.Image = "rbxassetid://18514353655"
+
+-- Scripts:
+
+local function KVKSDM_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	-- Get GUI elements
+	local executorGui = script.Parent
+	local toggleButton = executorGui:WaitForChild("ToggleButton")
+	local frame = executorGui:WaitForChild("Frame")
+	local codeInput = frame:WaitForChild("CodeInput")
+	local executeButton = frame:WaitForChild("ExecuteButton")
+	local clearButton = frame:WaitForChild("ClearButton")
+	local outputFrame = frame:WaitForChild("OutputFrame")
+	
+	-- Variables for dragging
+	local dragging = false
+	local dragInput, dragStart, startPos
+	
+	-- Function to update frame position
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	-- Mouse input handling for dragging
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if dragging and input == dragInput then
+			update(input)
+		end
+	end)
+	
+	-- Function to clear previous output
+	local function clearOutput()
+		for _, child in ipairs(outputFrame:GetChildren()) do
+			if child:IsA("TextLabel") then
+				child:Destroy()
+			end
+		end
+	end
+	
+	-- Function to execute code using loadstring
+	local function executeCode()
+		clearOutput()  -- Clear previous output
+		local code = codeInput.Text
+	
+		local success, result = pcall(function()
+			return loadstring(code)()  -- Execute the Lua code
+		end)
+	
+		if success then
+			-- Display result in the output frame
+			local outputText = Instance.new("TextLabel")
+			outputText.Text = "Result: " .. tostring(result)
+			outputText.Size = UDim2.new(1, 0, 0, 30)
+			outputText.TextColor3 = Color3.new(0, 1, 0)
+			outputText.BackgroundTransparency = 1
+			outputText.Parent = outputFrame
+		else
+			-- Display error in the output frame
+			local errorText = Instance.new("TextLabel")
+			errorText.Text = "Error: " .. tostring(result)
+			errorText.Size = UDim2.new(1, 0, 0, 30)
+			errorText.TextColor3 = Color3.new(1, 0, 0)
+			errorText.BackgroundTransparency = 1
+			errorText.Parent = outputFrame
+		end
+	end
+	
+	-- Function to clear input text
+	local function clearInputText()
+		codeInput.Text = ""
+	end
+	
+	-- Function to toggle frame visibility
+	local function toggleFrame()
+		frame.Visible = not frame.Visible
+	end
+	
+	-- Connect buttons to functions
+	executeButton.MouseButton1Click:Connect(executeCode)
+	clearButton.MouseButton1Click:Connect(clearInputText)
+	toggleButton.MouseButton1Click:Connect(toggleFrame)
+	
+end
+coroutine.wrap(KVKSDM_fake_script)()
+local function MEBZ_fake_script() -- ExecuteButton.LocalScript 
+	local script = Instance.new('LocalScript', ExecuteButton)
+
+	local textbox = script.Parent.Parent.TextBox
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
+	end)
+end
+coroutine.wrap(MEBZ_fake_script)()
+local function OAZYTA_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	
+	-- References to GUI elements
+	local frame = script.Parent
+	local usernameLabel = frame:WaitForChild("UsernameLabel")
+	local displayNameLabel = frame:WaitForChild("DisplayNameLabel")
+	local profilePicture = frame:WaitForChild("ProfilePicture")
+	
+	-- Function to fetch and display user info
+	local function fetchUserInfo()
+		-- Set the username and display name
+		usernameLabel.Text = "Username: " .. player.Name
+		displayNameLabel.Text = "Display Name: " .. player.DisplayName
+	
+		-- Get and set the profile picture
+		local userId = player.UserId
+		local success, thumbnailUrl = pcall(function()
+			return Players:GetUserThumbnailAsync(userId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+		end)
+	
+		if success then
+			profilePicture.Image = thumbnailUrl
+		else
+			warn("Failed to load profile picture")
+			profilePicture.Image = ""
+		end
+	end
+	
+	-- Fetch user info automatically
+	fetchUserInfo()
+	
+end
+coroutine.wrap(OAZYTA_fake_script)()
+local function ROZT_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(ROZT_fake_script)()
+local function IAIPU_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Frame2")
+	local Button = SGui:WaitForChild("ToggleButton")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+end
+coroutine.wrap(IAIPU_fake_script)()
+local function MQHXXOM_fake_script() -- ClearButton.LocalScript 
+	local script = Instance.new('LocalScript', ClearButton)
+
+	local textbox = script.Parent.Parent.TextBox
+	script.Parent.MouseButton1Click:Connect(function()
+		textbox.Text = ""
+	end)
+end
+coroutine.wrap(MQHXXOM_fake_script)()
